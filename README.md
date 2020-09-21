@@ -2,7 +2,7 @@
 This project is used to create a basic home page for an individual's personal website and gain exposure to basic React/HTML. The requirements for this are fairly vague; the goal is for the developer to include whatever content he/she wants on their own website! This is the first iteration in a series of features that will be added to this project, so it is important for developers to spend time thinking about what they want their first web application to include.
 
 Requirements:
-- One introduction paragraph with at least 3 <p> elements.
+- One introduction paragraph with at least 3 "<p>" elements.
 - At least 5 different React components implemented and used
 - At least one unordered list
 - At least one table
