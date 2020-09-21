@@ -6,7 +6,7 @@ import './index.css';
 class Introduction extends React.Component {
   render () {
       return (
-      <div>
+      <div class="component">
       <h2>Introduction</h2>
       <p>Andrew puts his introduction here.</p>
       <p>This is where more information would be included.</p>
@@ -19,10 +19,10 @@ class Introduction extends React.Component {
 class WebsiteFeaturesDescription extends React.Component {
   render() {
     return(
-      <div>
+      <div class="component">
         <h2>Website Features</h2>
         <p>These are the features intended for my personal website:</p>
-        <ul className="webiste-features">
+        <ul class="webiste-features">
           <li>HomePage</li>
           <li>Login Features</li>
           <li>Mining Dashboard</li>
@@ -84,7 +84,7 @@ class FeaturePrioritization extends React.Component {
   }
   render() {
     return(
-      <div>
+      <div class="component">
         <p>Here is the priority of features for the site:</p>
         <div className = "tableElement">
           {this.renderTable()}
@@ -106,7 +106,7 @@ class ContactInfo extends React.Component {
 
   render () {
       return (
-      <div>
+      <div class="component">
       <h2>Contact Info</h2>
       <p>Here are a few different methods to get in contact with me.</p>
       <table>
@@ -132,7 +132,7 @@ class HomePage extends React.Component {
   render() {
 	return (
       <div>
-      <h1 className="header">Andrew's Personal Website</h1>
+      <h1>Andrew's Personal Website</h1>
       <Introduction />
       <WebsiteFeaturesDescription />
       <FeaturePrioritization />
