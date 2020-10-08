@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import './index.css';
-import Header from './components/Header';
-import App from './App';
+import './../index.css';
+import Header from './Header';
 
 
 class Introduction extends React.Component {
@@ -147,9 +145,4 @@ class HomePage extends React.Component {
 }
 }
 
-// ========================================
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export default HomePage;
