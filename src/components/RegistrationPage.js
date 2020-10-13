@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+// import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import './../index.css';
 import RegistrationForm from './RegistrationForm';
 
 
-class RegistrationPage extends React.Component {
-  render() {
+function RegistrationPage (props) {
+
 	return (
       <div id="RegistrationPage">
-        <RegistrationForm />
+        <RegistrationForm showError={props.showError} updateTitle={props.updateTitle}/>
       </div>
   );
 }
-}
+
 export default RegistrationPage;
