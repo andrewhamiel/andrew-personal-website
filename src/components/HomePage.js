@@ -135,7 +135,7 @@ class HomePage extends React.Component {
 	return (
       <div>
         <Header />
-        <h1>Andrew's Personal Website</h1>
+        <div className="container-fluid"><h1 align="center">Andrew's Personal Website</h1></div>
         <Introduction />
         <WebsiteFeaturesDescription />
         <FeaturePrioritization />

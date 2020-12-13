@@ -5,12 +5,14 @@ import { Route } from 'react-router';
 import HomePage from './components/HomePage';
 import RegistrationPage from './components/RegistrationPage';
 import RegistrationAlerts from './components/Alerts/RegistrationAlerts';
+import { AuthContext } from "./context/auth";
 function App() {
   const [title, updateTitle] = useState(null);
 
   const [errorMessage, updateErrorMessage] = useState(null);
 
   return (
+    <AuthContext.Provider value={true}>
       <Router>
         <Switch>
           <Route exact path="/registration">
@@ -22,6 +24,7 @@ function App() {
         </Switch>
         <RegistrationAlerts errorMessage={errorMessage} hideError={updateErrorMessage} />
       </Router>
+    </AuthContext.Provider>
   );
 }
 
